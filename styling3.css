@@ -1,0 +1,494 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
+header {
+  background: #24262b;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+header .logo {
+  color:#fff;
+  font-size: 25px;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li a {
+  display: inline-block;
+  color: #ffffff;
+  padding: 5px 0;
+  margin: 0 10px;
+  border: 3px solid transparent;
+  transition: 0.2s;
+  text-decoration: none;
+}
+header nav ul li a:hover{
+  border-bottom-color: white;
+}
+header nav ul li a.about{
+  border-bottom-color: white;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background: #ffffff;
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .hamburger {
+    display: block;
+  }
+  header nav {
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    top: 70px;
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    transition: 0.3s;
+  }
+  header #nav_check:checked ~ nav {
+    left: 0;
+  }
+  header nav ul {
+    display: block;
+  }
+  header nav ul li a {
+    margin: 5px 0;
+    color: #24262b
+  }
+}
+
+
+
+
+.organizational {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+          
+}
+.chart-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+
+.chart {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Add this line to center the content horizontally */
+  margin: 30px 30px 30px 30px;
+  
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container2 h1.fellow,.container3 h1.officer,.chart2 .committee,.mission h1 {
+  color: white;
+  margin-bottom: 20px;
+  transition: color 0.5s ease;
+}
+
+.container2 h1.fellow:hover,
+.container3 h1.officer:hover,
+.chart2 .committee:hover,
+.mission h1:hover
+ {
+  color: black;
+}
+
+
+/* .container2 img {
+  width: 70%;
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
+} */
+.container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container3 h1.officer {
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* .container3 img {
+  width: 70%;
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.container2 img,
+.container3 img {
+  width: 70%;
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px; /* You can adjust the value to your preference */
+  transition: transform 0.3s;
+  
+}
+
+
+.chart2 {
+  text-align: center;
+  margin: 20px 20px;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  transition: transform 0.3s;
+}
+.chart2:hover{
+  transform: scale(1.02); 
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  margin: auto;
+}
+
+.slide-viewer {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-group {
+  display: flex;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.chart2 img {
+  border-radius: 15px;
+  width: 60%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.slide-buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.slide-buttons button {
+  background-color: #fff;
+  border: none;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slide-buttons button.active {
+  background-color: #000;
+}
+
+
+.logo3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Set a height for the container, adjust as needed */
+  
+}
+
+.logo3 img {
+  width: 20%; /* Set the desired width for the image */
+  height: auto; /* Maintain aspect ratio */
+  
+}
+
+
+.mission {
+  text-align: center;
+  color: white;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.statement {
+  padding: 20px;
+  background-color: #24262b;
+  width: 600px;
+  margin: 0 auto; /* Center the element horizontally */
+  border-radius: 10px;
+  font-size: larger; /* Include a value for the font size */
+  transition: transform 0.3s;
+}
+
+
+
+
+.statement:hover,.container2 img:hover,
+.container3 img:hover{
+  background-color: #3a3c41; /* Change the background color on hover */
+  transform: scale(1.1); 
+}
+
+.statement h1 {
+  text-align: center;
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+line-height: 1.5;
+font-family: 'Poppins', sans-serif;
+  background-color:rgb(64,84,92);
+grid-template-columns: 
+"header",
+"logo3",
+"organization",
+"chart",
+"mission",
+"footer";
+scroll-behavior: smooth;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+.container-footer{
+max-width: 1100px;
+margin:auto;
+}
+.row{
+display: grid;
+grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+ul{
+list-style: none;
+}
+.footer{
+background-color: #24262b;
+padding: 50px 0;
+}
+.footer-col{
+padding: 0 25px;
+}
+.footer-col h4{
+font-size: 18px;
+color: #ffffff;
+margin-bottom: 25px;
+font-weight: 500;
+position: relative;
+}
+.footer-col h4::before{
+content: '';
+position: absolute;
+left:0;
+bottom: -10px;
+height: 2px;
+box-sizing: border-box;
+width: 50px;
+}
+.footer-col ul li:not(:last-child){
+margin-bottom: 10px;
+}
+.footer-col ul li a{
+font-size: 16px;
+text-transform: capitalize;
+color: #ffffff;
+text-decoration: none;
+font-weight: 300;
+color: #bbbbbb;
+display: block;
+transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+color: #ffffff;
+padding-left: 8px;
+}
+.footer-col .social-links a{
+display: inline-block;
+height: 40px;
+width: 40px;
+background-color: rgba(255,255,255,0.2);
+margin:0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+color: #24262b;
+background-color: #ffffff;
+}
+
+.email {
+color: white;
+height: 50px;
+border-radius: 5px;
+background-color:rgba(255, 255, 255, 0.267);
+border: none;
+}
+input{
+text-align: center;
+}
+::placeholder {
+color: white;
+}
+#progress {
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+#progress-value {
+  display: block;
+  height: calc(100% - 12px);
+  width: calc(100% - 12px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #001a2e;
+}
+
+
+
+@media(max-width: 767px){
+.row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer-col{
+  margin-bottom: 40px;
+}
+}
+@media(max-width: 574px){
+.row{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.footer-col{
+  margin-bottom: 40px;
+}
+}
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 0 20px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  header nav {
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    top: 70px;
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    transition: 0.3s;
+  }
+
+  header #nav_check:checked ~ nav {
+    left: 0;
+  }
+
+  header nav ul {
+    display: block;
+  }
+
+  header nav ul li a {
+    margin: 5px 0;
+    color: #24262b;
+  }
+
+  .chart {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container2, .container3, .chart2, .mission {
+    margin: 20px;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .slide-buttons {
+    left: 0;
+  }
+
+  .chart2 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .logo3 img {
+    width: 50%;
+  }
+  
+}
+
+/* Tablet View */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .chart {
+    flex-wrap: wrap;
+  }
+
+  .container2, .container3 {
+    width: 48%;
+  }
+}
